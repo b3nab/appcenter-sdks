@@ -1,0 +1,21 @@
+{
+  "name": "appcenter-sdks",
+  "version": "1.0.0",
+  "description": "App Center SDKs implementation of OpenAPI",
+  "main": "index.js",
+  "scripts": {
+    "sdkgen-python": "cg -o sdks python appcenter-api.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/b3nab/appcenter-sdks.git",
+  "author": "b3nab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b3nab/appcenter-sdks/issues"
+  },
+  "homepage": "https://github.com/b3nab/appcenter-sdks#readme",
+  "dependencies": {
+    "global": "^4.3.2",
+    "openapi-codegen": "^1.5.5"
+  }
+}
