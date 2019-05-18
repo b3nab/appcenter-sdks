@@ -1,0 +1,43 @@
+# coding: utf-8
+
+{{>partial_header}}
+
+from setuptools import setup, find_packages  # noqa: H301
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+NAME = "{{{projectName}}}"
+VERSION = "{{packageVersion}}"
+{{#apiInfo}}
+{{#apis}}
+{{^hasMore}}
+# To install the library, run the following
+#
+# python setup.py install
+#
+# prerequisite: setuptools
+# http://pypi.python.org/pypi/setuptools
+
+REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
+
+# Create long description from the README file
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+setup(
+    name=NAME,
+    version=VERSION,
+    description="{{appName}}",
+    author_email="{{infoEmail}}",
+    url="{{packageUrl}}",
+    keywords=["Swagger", "{{appName}}"],
+    install_requires=REQUIRES,
+    packages=find_packages(),
+    include_package_data=True,
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+)
+{{/hasMore}}
+{{/apis}}
+{{/apiInfo}}
