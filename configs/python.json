@@ -2,7 +2,7 @@
   "name": "Python",
   "type": "client",
   "defaults": {
-    "packageVersion": "1.0.0",
+    "packageVersion": "0.0.1",
     "paypalDonate": "b3nab",
     "gitUserId": "b3nab",
     "infoEmail": "benedetto.abbenanti@gmail.com",
