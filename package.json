@@ -4,7 +4,7 @@
   "description": "App Center SDKs implementation of OpenAPI",
   "main": "index.js",
   "scripts": {
-    "sdkgen-python": "cg -o sdks python appcenter-api.json",
+    "sdkgen-python": "cg -o sdks python -t templates/python appcenter-api.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/b3nab/appcenter-sdks.git",
